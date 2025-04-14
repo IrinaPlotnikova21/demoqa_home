@@ -4,16 +4,16 @@ def test_search_icon(browser):
     page = SwagLabs(browser)
 
     page.visit()
-    assert page.exist_icon()
+    assert page.icon.exist()
 
 def test_search_login_input(browser):
     page = SwagLabs(browser)
 
     page.visit()
-    assert page.find_element('input[id="user-name"]')
+    assert page.input_name.exist()
 
 def test_search_password_input(browser):
     page = SwagLabs(browser)
 
     page.visit()
-    assert page.find_element('input[id="password"]')
+    assert page.input_password.exist()
