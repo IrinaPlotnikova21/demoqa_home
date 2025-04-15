@@ -20,5 +20,8 @@ class WebElement:
             return False
         return True
 
+    def is_visible(self):
+        return self.find_element().is_displayed()
+
     def get_text(self):
         return str(self.find_element().text)
